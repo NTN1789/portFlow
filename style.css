@@ -1,0 +1,168 @@
+* {
+    margin:0 ;
+    padding:0 ;
+    box-sizing:border-box ;
+}
+
+header {
+    background-color:white ;
+    width:100vw;
+    height:12vh ;
+    padding:20px ;
+    position: fixed;
+    
+}
+
+ nav {
+    display:flex ;
+    justify-content:space-between ;
+    align-items:center ;
+    
+    
+ }
+
+ 
+ nav ul {
+    display: flex ;
+    align-items:center ;
+    list-style:none ;
+   position: relative;
+   right:10rem ;
+   height:100% ;
+ }
+
+
+ nav li a {
+    text-decoration: none ;
+    color:gray ;
+    font-size:2rem ;
+    padding:8px 15px ;
+   
+ }
+
+ .p{
+  color:black ;
+ }
+
+ .r-nav li a:hover {
+    color: rgb(221, 221, 221);
+    text-decoration: none;
+    
+ }
+
+
+.r-nav li a:hover{
+ background: -webkit-linear-gradient(rgb(23, 35, 206), rgb(3, 252, 239));
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ letter-spacing: 5px ;
+}
+
+
+ .logo {   /*  arrumar isso  */
+   
+
+
+
+ }
+
+
+ 
+ .banner{
+ height:100vh;
+ background-image: url("https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:13ead2e1-3ac9-44a1-b4cb-14736da07bb0;revision=0?component_id=90838487-a7fa-4a2c-8cf4-a4748238ac5c&api_key=CometServer1&access_token=1670028227_urn%3Aaaid%3Asc%3AUS%3A13ead2e1-3ac9-44a1-b4cb-14736da07bb0%3Bpublic_c2d68838ba7219a13b6acbb3078320697ded56f6");
+ background-repeat: no-repeat;
+ background-size: 100%;
+ display: flex;
+ justify-content: center;
+ flex-direction: column;
+}
+
+
+.text{
+    position: relative;
+     top: -100px;
+     margin-left:10rem ;
+    font-size:5.2rem ;
+    color:white ;
+
+}
+
+.frase {
+
+        position: relative;
+        top:-45px ;
+        margin-left:8rem ;
+        font-size:2rem ;
+        color:white ;
+        letter-spacing:2px ;
+        
+}
+
+.frase:hover{
+
+    
+   
+
+
+}
+
+a {
+    text-decoration:none ;
+}
+
+
+
+  main {
+    width:100% ;
+    display:flex ;
+    justify-content:center ;
+    flex-wrap: wrap;
+    background-color: white; 
+  
+  }
+
+.alinhamento{
+        padding:4.2px ;
+}
+
+
+footer {
+
+    width:100% ;
+    display:flex ;
+    justify-content: space-between;
+    align-items:center ;
+
+}
+
+
+footer img {
+    position: relative;
+    left:25vh ;
+    margin-right:2.5rem ;
+    top:125px ;
+  }
+
+
+  div {
+    height:200px ;
+    
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
