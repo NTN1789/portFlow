@@ -174,41 +174,104 @@ a {
 
 footer {
  
-    
-    
   width:100% ;
     display:flex ;
-    justify-content: space-between;
+    justify-content: flex-start;
 
 
 }
-footer img {
-    position: relative;
-    left:30vh ;
-    margin-right:1.5rem ;
-   top:12vh ;
-    
-  }
-  div {
-    height: 175px ;
-   
-   
-  }
+
 
   h1 {
     top:7vh ;
     position:relative ;
     font-size:bold ;
     font-size:1.5rem ;
-    left:50rem ;
+    left:8rem ;
   }
 
   h3{
     font-size:15px ;
     position: relative;
-    left:57rem ;
+    left:10rem ;
     top:7.2vh ;
   }
+
+  .redeSocial{
+    position: relative;
+    display:flex ;
+    gap:25px ;
+    margin:75px;
+  }
+
+  .redeSocial .mexer{
+    position: relative;
+    list-style:none ;
+    width: 100px ;
+    height:100px ;
+    display:flex ;
+    justify-content:center ;
+    align-items:center ;
+    background: #fff;
+    box-shadow: 0 15px 35px  rgba(0, 0,0,0.1);
+    
+  }
+
+  .redeSocial .mexer .fa{
+    font-size:6em ;
+    -webkit-text-stroke:2px var(--clr) ;
+    color:transparent ;
+  }
+
+  .redeSocial .mexer::before{
+    content: '';
+    position:absolute ;
+    top:0 ;
+    left:0 ;
+    width:100% ;
+    height:0 ;
+    border-bottom:4px solid var(--clr) ;
+    transition:0.5s ease-in-out ;
+    font-family:fontAwesome ;
+    text-align:center ;
+    line-height:100px ;
+    font-size:6em ;
+    color: var(--clr);
+
+  }
+  .redeSocial .mexer:hover:before{
+
+    height:100% ;
+
+  }
+  .redeSocial .mexer:nth-child(1)::before
+  {
+    content: '\f09a ';
+  }
+  
+  .redeSocial .mexer:nth-child(2)::before
+  {
+    content: '\f099';
+  }
+  .redeSocial .mexer:nth-child(3)::before
+  {
+    content: '\f16d  ';
+  }
+  .redeSocial .mexer:nth-child(4)::before
+  {
+    content: '\f2c6  ';
+  }
+  .redeSocial .mexer:nth-child(5)::before
+  {
+    content: '\f232 ';
+  }
+  .redeSocial .mexer:nth-child(6)::before
+  {
+    content: '\f16a ';
+  }
+
+
+
 
 
   @media screen and (max-width:1024px){
@@ -223,14 +286,14 @@ footer img {
      position: absolute;
       left: 15rem;
      height:5vw ;
-      top:3.1vh;
+      top:3.2vh;
       display: flex;
     
       align-items: center;
     }
     ul li a {
       font-size: bold;
-      font-size: 1.2rem ;
+      font-size: 1.3rem ;
     }
     .banner{
       background-image: url(./laranja\ azul\ recorte.png);
@@ -266,7 +329,7 @@ footer img {
       width:100% ;
       animation: none;
       align-items: center;
-      flex-direction: column
+      flex-direction: column;
      
     }
 
@@ -275,24 +338,22 @@ footer img {
       display:flex;
       justify-content: center;
       
-    
-    
-    }
-    
-    footer{
-   
-      display:flex ;
-     align-items: center;
-     justify-content:space-between ;
       
+    
+    
     }
-    footer img {
+    
+    .redeSocial {
       position: relative;
-      left:1vh ;
-    margin-right:1rem ;
-    top:1;
+      display:flex ;
+      gap:25px ;
+   
 
     }
+
+      footer{
+        display:none ;
+      }
   
  
     
@@ -322,7 +383,7 @@ footer img {
 
     .negrito{
       position: relative;
-      font-size:12px ;
+      font-size:15px ;
       right:10rem ;
       font-size: bold;
 
@@ -330,7 +391,7 @@ footer img {
     ul li a  {
       margin-top:5px ;
         position: relative;
-      font-size:12px ;
+      font-size:15px ;
       right:10rem ;
       font-size: bold;
     
@@ -379,25 +440,11 @@ footer img {
     }
 
     footer{
-      display:flex ;
-      align-items: center;
-     justify-content:space-between ;
-      
-    }
-
-    footer img {
-      position: relative;
-     left:7vh ;
-    margin-right:3rem ;
-    top:2;
+      display:none;
 
     }
-    h3{
-      text-decoration: none;
-    }
-    h1{
-      text-decoration: none ;
-    }
+
+  
     
   
     
