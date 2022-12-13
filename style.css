@@ -9,7 +9,8 @@ header {
     width:100vw;
     padding:15px ;
     position: fixed;
-    height:15vh ;
+    height:13vh ;
+  z-index:10 ;
  
     
 }
@@ -18,9 +19,7 @@ header {
     display:flex ;
     justify-content:space-between ;
     align-items:center ;
-    
-    
-    
+      
  }
 
  
@@ -29,22 +28,28 @@ header {
     align-items:center ;
     list-style:none ;
    position: relative;
-   right:10rem ;
-   
+   width:100vh ;
+    
  }
 
 
  nav li a {
     text-decoration: none ;
     color:rgba(207, 199, 199, 0.671) ;
-    font-size:2rem ;
+    font-size:30px ;
     padding:8px 15px ;
     font-weight:bold ;
-  
+ 
    
    
  }
-
+ 
+ .negrito{
+  color: black;
+  font-size:25px ;
+  font-weight: bold;
+  cursor: pointer;
+ }
 
 
 
@@ -70,15 +75,13 @@ header {
   
  .logo {
     position: relative;
-   left:10vh ;
+   left:5vh ;
  }
 
  .banner{
-  width:100% ;
  height:100vh;
- background-image: url("https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:13ead2e1-3ac9-44a1-b4cb-14736da07bb0;revision=0?component_id=90838487-a7fa-4a2c-8cf4-a4748238ac5c&api_key=CometServer1&access_token=1670028227_urn%3Aaaid%3Asc%3AUS%3A13ead2e1-3ac9-44a1-b4cb-14736da07bb0%3Bpublic_c2d68838ba7219a13b6acbb3078320697ded56f6");
+ background-image: url("./laranja\ azul\ recorte.png");
  background-repeat: no-repeat;
- background-size: 100%;
  display: flex;
  justify-content: center;
  flex-direction: column;
@@ -86,9 +89,9 @@ header {
 
 .text{
     position: relative;
-      margin-bottom:10vw ;
-     margin-left:9.5rem ;
-    font-size:5rem ;
+      margin-bottom:8vw ;
+     margin-left:7.5rem ;
+    font-size:4rem ;
     color:white ;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
@@ -97,13 +100,12 @@ header {
 
 .frase {
         position: absolute;
-        margin-left:8rem ;
         font-family: 'Montserrat' , sans-serif;
         font-size:2rem ;
         color:white ;     
         text-transform: uppercase;     
         font-weight: bold;  
-        left: 2rem;
+        left: 8rem;
 }
 
 h2:hover{
@@ -111,51 +113,56 @@ h2:hover{
   
 transition:2s ;
  transform: scale(1.1) ;  
+ text-decoration: underline;
    
 }
+
 a {
     text-decoration:none ;
 }
+
+
   main {
    display: flex;
     width:100% ;
-    height:auto ;
+    
     flex-wrap: wrap;
     justify-content:center ;
+
     
 
   }
 
-  figure{
-    display:inline-block ;
    
-    
+  
+  .alinhamento:hover{
+      
+    padding: 10px;
+    transform: scale(1.1);
+   
  
-  }
-   
-  
 
-  img:hover{
-
-    cursor: pointer;
-  
-      transform:scale(1.1);
-      position: relative;
-      top: -2px;
-    
+     
      
       
      
   }
 
 
-  
  
 .alinhamento {
+     
+        width:40vh ;
+        padding: 4.5px;
+        transition: .3s linear;
+        cursor: pointer;
+        
 
-
-        padding:7.2px ;
+           
+        
 }
+
+
 
 
 
@@ -166,24 +173,235 @@ a {
 
 
 footer {
-  
+ 
+    
+    
+  width:100% ;
     display:flex ;
     justify-content: space-between;
-    align-items:center ;
+
 
 }
 footer img {
     position: relative;
-    left:25vh ;
-    margin-right:2.5rem ;
-    top:125px ;
+    left:30vh ;
+    margin-right:1.5rem ;
+   top:12vh ;
+    
   }
   div {
-    height:200px ;
-  
+    height: 175px ;
+   
+   
+  }
+
+  h1 {
+    top:7vh ;
+    position:relative ;
+    font-size:bold ;
+    font-size:1.5rem ;
+    left:50rem ;
+  }
+
+  h3{
+    font-size:15px ;
+    position: relative;
+    left:57rem ;
+    top:7.2vh ;
   }
 
 
+  @media screen and (max-width:1024px){
+
+    .logo {
+      position: absolute;
+      right:50rem ;
+      top:20px ;
+    }
+    .r-nav{
+     width: 100%;
+     position: absolute;
+      left: 15rem;
+     height:5vw ;
+      top:3.1vh;
+      display: flex;
+    
+      align-items: center;
+    }
+    ul li a {
+      font-size: bold;
+      font-size: 1.2rem ;
+    }
+    .banner{
+      background-image: url(./laranja\ azul\ recorte.png);
+      background-repeat: no-repeat;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+     background-position: -68rem;
+     width:100% ;
+    }
+    .text{
+      position: relative;
+      right:65px ;
+      font-size:45px ;
+      margin-bottom:35px ;
+   
+    
+      
+      
+    }
+
+    .frase{
+    
+      position: relative;
+      right:65px ;
+      font-size:35px ;
+      margin-bottom:75px ;
+      
+    }
+    main {
+      display:flex ;
+      flex-wrap: wrap;
+      width:100% ;
+      animation: none;
+      align-items: center;
+      flex-direction: column
+     
+    }
+
+    figure{
+      width:100% ;
+      display:flex;
+      justify-content: center;
+      
+    
+    
+    }
+    
+    footer{
+   
+      display:flex ;
+     align-items: center;
+     justify-content:space-between ;
+      
+    }
+    footer img {
+      position: relative;
+      left:1vh ;
+    margin-right:1rem ;
+    top:1;
+
+    }
+  
+ 
+    
+    
+  }
+
+
+  @media screen and (max-width:768px) {
+
+    .logo{
+      position: relative;
+      left:1rem ;
+    }
+    
+  
+    .r-nav{
+      position: absolute;
+      width:100% ;
+      top:0 ;
+      display: flex;
+      flex-direction:column ;
+      align-items: center;
+      right:45rem ;
+    
+      
+    } 
+
+    .negrito{
+      position: relative;
+      font-size:12px ;
+      right:10rem ;
+      font-size: bold;
+
+    }
+    ul li a  {
+      margin-top:5px ;
+        position: relative;
+      font-size:12px ;
+      right:10rem ;
+      font-size: bold;
+    
+    }
+
+    .banner{
+      background-image: url(./laranja\ azul\ recorte.png);
+      background-repeat: no-repeat;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+     background-position: -70rem;
+    }
+ 
+
+
+    .text{
+      position: relative;
+      right:62px ;
+      font-size:25px ;
+      
+      
+    }
+
+    .frase{
+      position: relative;
+      right:61px ;
+      font-size:20px ;
+      
+    }
+     
+    main {
+      display:flex ;
+      flex-wrap: wrap;
+      
+      width:100% ;
+     
+    }
+
+    figure{
+      width:100% ;
+      display:flex;
+      justify-content: center;
+      
+      
+    }
+
+    footer{
+      display:flex ;
+      align-items: center;
+     justify-content:space-between ;
+      
+    }
+
+    footer img {
+      position: relative;
+     left:7vh ;
+    margin-right:3rem ;
+    top:2;
+
+    }
+    h3{
+      text-decoration: none;
+    }
+    h1{
+      text-decoration: none ;
+    }
+    
+  
+    
+  }
 
 
 
