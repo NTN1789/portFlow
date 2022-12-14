@@ -44,7 +44,7 @@ header {
    
  }
  
- .negrito{
+ .boldText{
   color: black;
   font-size:25px ;
   font-weight: bold;
@@ -458,7 +458,7 @@ footer {
       align-items: center;
       right:45rem ;
     } 
-    .negrito{
+    .boldText{
       position: relative;
       font-size:15px ;
       right:10rem ;
