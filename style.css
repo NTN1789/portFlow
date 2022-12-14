@@ -52,17 +52,12 @@ header {
  }
 
 
-
-
-
  .r-nav li:hover {
     position: relative;
     transition: 2s;
     transform: scale(1.2);
    border: none;
-    
-    
-    
+     
 
  }
 
@@ -98,7 +93,7 @@ header {
     
 }
 
-.frase {
+.sloganFrase {
         position: absolute;
         font-family: 'Montserrat' , sans-serif;
         font-size:2rem ;
@@ -121,7 +116,6 @@ a {
     text-decoration:none ;
 }
 
-
   main {
    display: flex;
     width:100% ;
@@ -133,54 +127,29 @@ a {
 
   }
 
-   
-  
-  .alinhamento:hover{
+  .alinhamentoDeImagem:hover{
       
     padding: 10px;
     transform: scale(1.1);
-   
- 
 
-     
-     
-      
      
   }
 
-
- 
-.alinhamento {
+.alinhamentoDeImagem {
      
         width:40vh ;
         padding: 4.5px;
         transition: .3s linear;
         cursor: pointer;
-        
-
-           
-        
+      
 }
-
-
-
-
-
-
-
-
-
-
 
 footer {
  
   width:100% ;
     display:flex ;
     justify-content: flex-start;
-
-
 }
-
 
   h1 {
     top:7vh ;
@@ -204,7 +173,7 @@ footer {
     margin:60px;
   }
 
-  .redeSocial .mexer{
+  .redeSocial .iconMove{
     position: relative;
     list-style:none ;
     width: 100px ;
@@ -217,13 +186,13 @@ footer {
     
   }
 
-  .redeSocial .mexer .fa{
+  .redeSocial .iconMove .fa{
     font-size:6em ;
     -webkit-text-stroke:2px var(--clr) ;
     color:transparent ;
   }
 
-  .redeSocial .mexer::before{
+  .redeSocial .iconMove::before{
     content: '';
     position:absolute ;
     top:0 ;
@@ -239,39 +208,105 @@ footer {
     color: var(--clr);
 
   }
-  .redeSocial .mexer:hover:before{
+  .redeSocial .iconMove:hover:before{
 
     height:100% ;
 
   }
-  .redeSocial .mexer:nth-child(1)::before
+  .redeSocial .iconMove:nth-child(1)::before
   {
     content: '\f09a ';
   }
   
-  .redeSocial .mexer:nth-child(2)::before
+  .redeSocial .iconMove:nth-child(2)::before
   {
     content: '\f099';
   }
-  .redeSocial .mexer:nth-child(3)::before
+  .redeSocial .iconMove:nth-child(3)::before
   {
     content: '\f16d  ';
   }
-  .redeSocial .mexer:nth-child(4)::before
+  .redeSocial .iconMove:nth-child(4)::before
   {
     content: '\f2c6  ';
   }
-  .redeSocial .mexer:nth-child(5)::before
+  .redeSocial .iconMove:nth-child(5)::before
   {
     content: '\f232 ';
   }
-  .redeSocial .mexer:nth-child(6)::before
+  .redeSocial .iconMove:nth-child(6)::before
   {
     content: '\f16a ';
   }
 
 
 
+  .button{
+    position:relative ;
+    display:inline-block ;
+    margin:35px ;
+    top:5rem ;
+}
+
+
+
+
+.button a {
+    color:white ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight:bold ;
+    font-size:36px ;
+    text-align:center ;
+    text-decoration:none ;
+    background-color:aqua ;
+    display:block ;
+    position: relative;
+    padding:20px 40px ;
+
+        -webkit-tap-highlight-color:rgba(0, 0, 0, 0) ;
+        text-shadow:0px 1px 0px #000  ;
+        filter:drop-shadow(color=#000, offx=0px,offy=1px) ;
+
+
+    -webkit-box-shadow: inset 0 1px 0 #FFE5c4, 0 10px 0 #493010;
+
+    -moz-box-shadow: inset 0 1px 0 #FFE5c4, 0 10px 0 #472d0a;
+     
+    box-shadow:inset 0 1px #FFE5C4, 0 10px 0 #2b1b06 ;
+
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius:5px ;
+
+}
+
+
+
+.button a:active{
+    top:10px ;
+    background-color:tomato ;
+
+    -webkit-box-shadow:inset 0 1px 0 #FFE5c4, inset 0 -3px 0 #915100;
+
+    -moz-box-shadow:inset  0 1px 0 #FFE5c4 , inset 0 -3px 0 #915100;
+
+    box-shadow: inset 0 1px #FFE5C4, inset 0 -3px 0 #915100 ;    
+}
+
+
+.button:after {
+    content:"" ;
+    height:100% ;
+    width:100% ;
+    padding:4px ;
+    position:absolute ;
+    bottom:-15px ;
+    left:-4px ;
+    z-index:-1 ;
+ 
+    
+}
 
 
   @media screen and (max-width:1024px){
@@ -309,19 +344,12 @@ footer {
       right:65px ;
       font-size:45px ;
       margin-bottom:35px ;
-   
-    
-      
-      
     }
-
-    .frase{
-    
+    .sloganFrase{
       position: relative;
       right:65px ;
       font-size:35px ;
-      margin-bottom:75px ;
-      
+      margin-bottom:75px ;    
     }
     main {
       display:flex ;
@@ -330,34 +358,88 @@ footer {
       animation: none;
       align-items: center;
       flex-direction: column;
-     
     }
-
     figure{
       width:100% ;
       display:flex;
       justify-content: center;
-      
-      
-    
-    
     }
     
     .redeSocial {
       position: relative;
       display:flex ;
-      gap:25px ;
-   
-
+      gap:30px ;
     }
 
       footer{
         display:flex ;
       }
-  
- 
+
+      .button{
+        position:relative ;
+        display:inline-block ;
+        margin:35px ;
+        right:8rem ;
+        top:42rem ;
+    }
     
-    
+
+.button a {
+  color:white ;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight:bold ;
+  font-size:36px ;
+  text-align:center ;
+  text-decoration:none ;
+  background-color:tomato ;
+  display:block ;
+  position: relative;
+  padding:20px 20px ;
+
+      -webkit-tap-highlight-color:rgba(0, 0, 0, 0) ;
+      text-shadow:0px 1px 0px #000  ;
+      filter:drop-shadow(color=#000, offx=0px,offy=1px) ;
+
+
+  -webkit-box-shadow: inset 0 1px 0 #FFE5c4, 0 10px 0 #915100;
+
+  -moz-box-shadow: inset 0 1px 0 #FFE5c4, 0 10px 0 #915100;
+   
+  box-shadow:inset 0 1px #FFE5C4, 0 10px 0 #915100 ;
+
+
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius:5px ;
+
+}
+
+
+
+.button a:active{
+  top:10px ;
+  background-color:tomato ;
+
+  -webkit-box-shadow:inset 0 1px 0 #FFE5c4, inset 0 -3px 0 #915100;
+
+  -moz-box-shadow:inset  0 1px 0 #FFE5c4 , inset 0 -3px 0 #915100;
+
+  box-shadow: inset 0 1px #FFE5C4, inset 0 -3px 0 #915100 ;    
+}
+
+
+.button:after {
+  content:"" ;
+  height:100% ;
+  width:100% ;
+  padding:4px ;
+  position:absolute ;
+  bottom:-15px ;
+  left:-4px ;
+  z-index:-1 ;
+
+}
+
   }
 
 
@@ -367,8 +449,6 @@ footer {
       position: relative;
       left:1rem ;
     }
-    
-  
     .r-nav{
       position: absolute;
       width:100% ;
@@ -377,16 +457,12 @@ footer {
       flex-direction:column ;
       align-items: center;
       right:45rem ;
-    
-      
     } 
-
     .negrito{
       position: relative;
       font-size:15px ;
       right:10rem ;
       font-size: bold;
-
     }
     ul li a  {
       margin-top:5px ;
@@ -396,7 +472,6 @@ footer {
       font-size: bold;
     
     }
-
     .banner{
       background-image: url(./laranja\ azul\ recorte.png);
       background-repeat: no-repeat;
@@ -405,78 +480,120 @@ footer {
       flex-direction: column;
      background-position: -70rem;
     }
- 
-
-
     .text{
       position: relative;
       right:60px ;
-      font-size:25px ;
-      
-      
+      font-size:25px ; 
     }
 
-    .frase{
+    .sloganFrase{
       position: relative;
       right:58px ;
       font-size:20px ;
       
     }
-     
     main {
       display:flex ;
-      flex-wrap: wrap;
-      
+      flex-wrap: wrap; 
       width:100% ;
-     
     }
 
     figure{
       width:100% ;
       display:flex;
       justify-content: center;
-      
-      
     }
 
     .redeSocial {
       position: relative;
       display:flex ;
-      gap:25px ;
-      left:7rem ;
+      gap:10px ;
+      left:1rem ;
    flex-wrap: wrap;
-
     }
-
       footer{
         display:flex ;
         height:5vh ;
         width:5vh ;
-    
       }
-
       h1 {
         position:relative ;
         display:flex ;
         right:25rem ;
-        left:0 ;
+        left:0 ; 
         
       }
-
       h3{
         position:relative ;
         display:flex ;
         right:22rem ;
-        left:0 ;
-        
+        left:0 ; 
       }
-      
-      
 
-  
+      .button{
+        position:relative ;
+        display:inline-block ;
+        margin:35px ;
+        right:8rem ;
+        top:42rem ;
+    }
     
-  
-    
+
+.button a {
+  color:white ;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight:bold ;
+  font-size:36px ;
+  text-align:center ;
+  text-decoration:none ;
+  background-color:tomato ;
+  display:block ;
+  position: relative;
+  padding:20px 20px ;
+
+      -webkit-tap-highlight-color:rgba(0, 0, 0, 0) ;
+      text-shadow:0px 1px 0px #000  ;
+      filter:drop-shadow(color=#000, offx=0px,offy=1px) ;
+
+
+  -webkit-box-shadow: inset 0 1px 0 #FFE5c4, 0 10px 0 #915100;
+
+  -moz-box-shadow: inset 0 1px 0 #FFE5c4, 0 10px 0 #915100;
+   
+  box-shadow:inset 0 1px #FFE5C4, 0 10px 0 #915100 ;
+
+
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius:5px ;
+
+}
+
+
+
+.button a:active{
+  top:10px ;
+  background-color:tomato ;
+
+  -webkit-box-shadow:inset 0 1px 0 #FFE5c4, inset 0 -3px 0 #915100;
+
+  -moz-box-shadow:inset  0 1px 0 #FFE5c4 , inset 0 -3px 0 #915100;
+
+  box-shadow: inset 0 1px #FFE5C4, inset 0 -3px 0 #915100 ;    
+}
+
+
+.button:after {
+  content:"" ;
+  height:100% ;
+  width:100% ;
+  padding:4px ;
+  position:absolute ;
+  bottom:-15px ;
+  left:-4px ;
+  z-index:-1 ;
+
+}
   }
 
 
