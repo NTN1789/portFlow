@@ -200,8 +200,8 @@ footer {
   .redeSocial{
     position: relative;
     display:flex ;
-    gap:25px ;
-    margin:75px;
+    gap:15px ;
+    margin:60px;
   }
 
   .redeSocial .mexer{
@@ -301,7 +301,7 @@ footer {
       display: flex;
       justify-content: center;
       flex-direction: column;
-     background-position: -68rem;
+     background-position: -50rem;
      width:100% ;
     }
     .text{
@@ -352,7 +352,7 @@ footer {
     }
 
       footer{
-        display:none ;
+        display:flex ;
       }
   
  
@@ -410,7 +410,7 @@ footer {
 
     .text{
       position: relative;
-      right:62px ;
+      right:60px ;
       font-size:25px ;
       
       
@@ -418,7 +418,7 @@ footer {
 
     .frase{
       position: relative;
-      right:61px ;
+      right:58px ;
       font-size:20px ;
       
     }
@@ -439,10 +439,39 @@ footer {
       
     }
 
-    footer{
-      display:none;
+    .redeSocial {
+      position: relative;
+      display:flex ;
+      gap:25px ;
+      left:7rem ;
+   flex-wrap: wrap;
 
     }
+
+      footer{
+        display:flex ;
+        height:5vh ;
+        width:5vh ;
+    
+      }
+
+      h1 {
+        position:relative ;
+        display:flex ;
+        right:25rem ;
+        left:0 ;
+        
+      }
+
+      h3{
+        position:relative ;
+        display:flex ;
+        right:22rem ;
+        left:0 ;
+        
+      }
+      
+      
 
   
     
